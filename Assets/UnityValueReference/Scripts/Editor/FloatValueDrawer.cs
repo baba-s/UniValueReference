@@ -17,7 +17,7 @@ namespace KoganeUnityLib
 			referencePosition.width = position.width * 0.75f;
 			valuePosition.x         = referencePosition.xMax;
 
-			EditorGUI.PropertyField( referencePosition, referenceProperty );
+			EditorGUI.PropertyField( referencePosition, referenceProperty, label );
 
 			var reference = referenceProperty.objectReferenceValue as FloatValueReference;
 
