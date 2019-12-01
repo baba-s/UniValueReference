@@ -1,10 +1,11 @@
-﻿using UnityEditor;
+﻿using KoganeUnityLib.Internal;
+using UnityEditor;
 using UnityEngine;
 
 namespace KoganeUnityLib
 {
 	[CustomPropertyDrawer( typeof( StringValue ) )]
-	public sealed class StringValueDrawer : PropertyDrawer
+	internal sealed class StringValueDrawer : PropertyDrawer
 	{
 		public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
 		{
@@ -13,8 +14,8 @@ namespace KoganeUnityLib
 
 			var referencePosition = position;
 			var valuePosition     = position;
-
-			referencePosition.width = position.width * 0.75f;
+			
+			referencePosition.width = position.width * UnityValueReferenceUtils.DRAWER_WIDTH_RATE;
 			valuePosition.x         = referencePosition.xMax;
 
 			EditorGUI.PropertyField( referencePosition, referenceProperty, label );
