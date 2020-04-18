@@ -1,0 +1,17 @@
+{
+    "name": "UniValueReference.Editor",
+    "references": [
+        "GUID:1721ff5f5d65b6744bf358e3849bfc60"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
